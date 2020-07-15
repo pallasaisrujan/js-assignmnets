@@ -1,0 +1,52 @@
+<html>
+    <head>
+        question 2
+    </head>
+    <body>
+        <button onclick="myFunction()">age</button>
+        <p id="demo"></p>
+        <script>
+                var a = ["1", "2", "3","4","5"];
+                var b = ["6", "7", "8","9","10"];
+                var c=[];
+                a.fill("11");//fill
+                console.log(a);
+                console.log(c.concat(a,b));//concat
+        </script>
+        <script>
+            var ages = [19, 20, 21, 22];
+
+            function checkAdult(age) {
+            return age >= 18;
+        }
+
+           function myFunction() {
+           document.getElementById("demo").innerHTML = ages.filter(checkAdult);//fillter
+        }
+        </script>
+            <p id="remo"></p>
+
+        <script>
+        var Name1 = "srujan";
+         var Name2 = 'sai';  
+
+        document.getElementById("remo").innerHTML =
+        Name2 + " " + Name1; //string concat
+        </script>
+        <script>
+             var res = Name1.charAt(0)// charAt
+             document.getElementById("remo").innerHTML = res;
+        </script>
+        <p id="memo"></p>
+        <button onclick="myFunction2()">endswith()</button>
+        <script>
+        function myFunction2() {
+        var sentence = "Hello world, welcome to the letsupgrade.";
+        var res1 = sentence.endsWith("letsupgrade");
+        var n = sentence.indexOf("welcome");
+        document.getElementById("memo").innerHTML = res1;//endswith()
+        document.getElementById("memo").innerHTML = n;//indexof()
+        }
+        </script>
+        </body>
+</html>
