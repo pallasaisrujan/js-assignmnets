@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <head>
+                Question3
+        </head>
+        
+        <button onclick="grades()">conditional grade</button>
+        <button onclick="grades1()">ternary grade</button>
+
+        <script>
+            function grades(){
+                var marks=prompt("enter the your marks");
+                if(marks >= 90){
+                document.write("marks is "+ marks +" and grade is A ");
+                }
+                else if(marks >=60 && marks <90){
+                document.write("marks is "+ marks +" and grade is B"  );
+                }
+                else if(marks >=40 && marks <60){
+                    document.write("marks is "+ marks +" and grade is C" );
+                }
+                else if(marks <40){
+                    document.write("please retake the test untill you get any of the above grade" );
+                }
+            }
+            
+        </script>
+        <script>
+            function grades1(){
+            var marks=prompt("enter the your marks");
+            var display = marks >= 90 ? 'A grade' : (marks >= 60 && marks <90? 'B grade' : (marks >=40 && marks<60 ?'C grade':'retake the test'));
+            document.write(display);
+            }
+        </script>
+
+    </body>
+</html>

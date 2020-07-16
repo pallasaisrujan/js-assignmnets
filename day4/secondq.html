@@ -1,0 +1,20 @@
+<html>
+    <body>
+        <head>
+                Question2
+        </head>
+        <button onclick="version2()">version</button>
+
+        <script>
+            function version2(){
+                var user=prompt("enter the os and version");
+                var n=user.indexOf(" ");
+                var os1=user.slice(0, n);
+                var n2=user.length;
+                var version1=user.slice(n+1, n2);
+                console.log(version1);
+                document.write("the os name is "+ os1 +" and version is "+ version1 );
+            }
+        </script>
+    </body>
+</html>
