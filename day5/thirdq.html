@@ -1,0 +1,22 @@
+<html>
+    <head>
+        question3
+        <body>
+            <button onclick="function3()">Question 3</button>
+            <script>
+                function function3(){
+                var arr=["book","pen","eraser"];
+                var shoppingbasket=arr.slice();
+                console.log(shoppingbasket);
+                var newone=prompt("enter the item");
+                var i=0;   
+                while(newone=arr[i]){
+                    console.log("this one is already bought");
+                }
+                shoppingbasket.push(newone);
+                console.log(shoppingbasket);
+                    }
+            </script>
+        </body>
+    </head>
+</html>
